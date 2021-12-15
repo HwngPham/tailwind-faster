@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+@font-face {
+  font-family: 'New York Extra Large';
+  src: url('../public/fonts/NewYorkExtraLargeBlack.otf');
+}
+@font-face {
+  font-family: 'New York Small';
+  src: url('../public/fonts/NewYorkExtraLargeBlack.otf');
+}
