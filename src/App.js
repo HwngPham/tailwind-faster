@@ -1,23 +1,25 @@
-import React, { useEffect, useState } from "react"
-
-import AnticTemplate from "./pages/AnticTemplate"
+import { useRouter } from './useRouter'
+import AnticTemplate, {
+  ListingDesktop,
+  ListingMobile,
+  ArticleDesktop,
+  ArticleMobile,
+} from "./pages/AnticTemplate"
 import BlogTemplate from "./pages/BlogTemplate"
 
 export default function App() {
-  const contents = {
+  const { currentPage } = useRouter({
     '/': BlogTemplate,
     '/antic': AnticTemplate,
-  }
-  const { pathname } = window?.location
-  const [PageComponent, setPageComponent] = useState(contents['/'])
-
-  useEffect(() => {
-    setPageComponent(contents[pathname])
-  }, [pathname])
+    '/antic/list_desktop': ListingDesktop,
+    '/antic/list_mobile': ListingMobile,
+    '/antic/article_desktop': ArticleDesktop,
+    '/antic/article_mobile': ArticleMobile,
+  })
 
   return (
     <main>
-      {PageComponent}
+      {currentPage}
     </main>
   )
 }
