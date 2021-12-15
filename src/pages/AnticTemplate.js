@@ -62,7 +62,7 @@ export function ListingDesktop() {
         <ul className="flex">
           <a
             href="#"
-            className="mr-[30px] hover:border-b-black hover:border-b-[2px]"
+            className="mr-[30px] hover:border-b-black hover:border-b-[2px] cursor-pointer"
           >
             <li className="text-[20px] font-semibold tracking-widest uppercase">
               blog
@@ -70,7 +70,7 @@ export function ListingDesktop() {
           </a>
           <a
             href="#2"
-            className="mr-[30px] hover:border-b-black hover:border-b-[2px]"
+            className="mr-[30px] hover:border-b-black hover:border-b-[2px] cursor-pointer"
           >
             <li className="text-[20px] font-semibold tracking-widest uppercase">
               about
@@ -78,7 +78,7 @@ export function ListingDesktop() {
           </a>
           <a
             href="#3"
-            className="mr-[30px] hover:border-b-black hover:border-b-[2px]"
+            className="mr-[30px] hover:border-b-black hover:border-b-[2px] cursor-pointer"
           >
             <li className="text-[20px] font-semibold tracking-widest uppercase">
               links
@@ -86,7 +86,7 @@ export function ListingDesktop() {
           </a>
           <a
             href="#4"
-            className="mr-[30px] hover:border-b-black hover:border-b-[2px]"
+            className="mr-[30px] hover:border-b-black hover:border-b-[2px] cursor-pointer"
           >
             <li className="text-[20px] font-semibold tracking-widest uppercase">
               projects
@@ -234,12 +234,12 @@ export function ListingDesktop() {
         <p className="font-ny-sm leading-[24px] text-[16px] font-light w-[488px] mb-[32px] text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu velit
           tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce
-          a nunc eget ligula suscipit finibus.
+          nunc eget ligula suscipit finibus.
         </p>
 
         <ul className="flex space-x-[28px] mb-[64px]">
           {links.map((link) => (
-            <a hrer="#" className="cursor-pointer">
+            <a href="#" className="cursor-pointer">
               <li className="underline text-[16px] font-sf">{link}</li>
             </a>
           ))}
