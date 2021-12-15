@@ -11,3 +11,28 @@
   font-family: 'New York Small';
   src: url('../public/fonts/NewYorkExtraLargeBlack.otf');
 }
+@font-face {
+  font-family: 'SF Mono';
+  src: url('../public/fonts/SFMonoRegular.ttf');
+}
+
+* {
+  letter-spacing: 0.025em;
+  word-spacing: 0.0375em;
+}
+
+.font-ny-lg {
+  font-family: 'New York Extra Large';
+}
+
+.font-ny-sm {
+  font-family: 'New York Small';
+}
+
+.font-sf {
+  font-family: 'SF Pro Display';
+}
+
+.font-sf-mono {
+  font-family: 'SF Mono';
+}
